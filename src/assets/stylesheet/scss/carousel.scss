@@ -1,0 +1,14 @@
+.carousel {
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel__item {
+	margin-right: 20px;
+	flex-shrink: 0;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}

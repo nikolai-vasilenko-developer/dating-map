@@ -1,0 +1,23 @@
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.header__logo {
+	padding: 30px 0;
+}
+
+.header__logo-img {
+	margin-right: 20px;
+}
+
+.header__registration {
+	display: flex;
+	align-items: center;
+}
+
+.header__registration-text {
+	margin-right: 20px;
+}

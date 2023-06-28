@@ -1,0 +1,13 @@
+.footer {
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__menu-item {
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}

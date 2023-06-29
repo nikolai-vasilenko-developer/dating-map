@@ -14,17 +14,17 @@
 			</div>
 			<transition name="fade">
 				<form class="auth-view__form form" action="#">
-					<input
-						type="text"
-						class="form__element input"
+					<p-input
+						class="form__element"
+						v-model:value.trim="formField.email"
 						placeholder="Введите электронную почту"
-						v-model.trim="formField.email"
+						:icon="MessageIcon"
 					/>
-					<input
-						type="password"
-						class="form__element input"
+					<p-input-password
+						class="form__element"
+						v-model:value.trim="formField.password"
 						placeholder="Введите пароль"
-						v-model.trim="formField.password"
+						:icon="PasswordIcon"
 					/>
 					<p-button>Войти</p-button>
 					<small class="auth-view__forgot-pass"
@@ -39,10 +39,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import PButton from "@/components/UI/PButton.vue";
+import PInput from "@/components/UI/PInput.vue";
+import MessageIcon from "@/components/icons/MessageIcon.vue";
+import PasswordIcon from "@/components/icons/PasswordIcon.vue";
+import PInputPassword from "@/components/UI/PInputPassword.vue";
 
 const formField = ref({
-	email: null,
-	password: null,
+	email: "",
+	password: "",
+	test: "",
 });
 </script>
 

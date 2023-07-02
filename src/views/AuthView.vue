@@ -26,7 +26,7 @@
 						placeholder="Введите пароль"
 						:icon="PasswordIcon"
 					/>
-					<p-button>Войти</p-button>
+					<p-button use-shadow>Войти</p-button>
 					<small class="auth-view__forgot-pass"
 						>Я не помню пароль</small
 					>

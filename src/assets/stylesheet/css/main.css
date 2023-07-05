@@ -284,6 +284,29 @@ h3 {
   width: 100%;
 }
 
+.sex-radio-button {
+  padding: 17px 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 500px;
+  cursor: pointer;
+  border: 1px solid red;
+  flex: 1;
+  margin-right: 10px;
+}
+.sex-radio-button:last-child {
+  margin-right: 0;
+}
+
+.sex-radio-button_active {
+  background: #000;
+}
+
+.sex-radio {
+  display: flex;
+  align-items: center;
+}
+
 .auth-view {
   display: flex;
   flex-direction: column;

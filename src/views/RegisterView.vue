@@ -19,11 +19,23 @@
 						v-model:value="formField.day"
 						placeholder="День"
 					/>
-					<p-input
-						class="birthday-input__month birthday-input__item"
-						v-model:value="formField.month"
-						placeholder="Месяц"
-					/>
+					<select
+						class="birthday-input__item birthday-input__month"
+						v-model="formField.month"
+					>
+						<option value="0">Январь</option>
+						<option value="1">Февраль</option>
+						<option value="2">Март</option>
+						<option value="3">Апрель</option>
+						<option value="4">Май</option>
+						<option value="5">Июнь</option>
+						<option value="6">Июль</option>
+						<option value="7">Август</option>
+						<option value="8">Сентябрь</option>
+						<option value="9">Октябрь</option>
+						<option value="10">Ноябрь</option>
+						<option value="11">Декабрь</option>
+					</select>
 					<p-input
 						class="birthday-input__year birthday-input__item"
 						v-model:value="formField.year"
@@ -61,14 +73,12 @@ import MessageIcon from "@/components/icons/MessageIcon.vue";
 import PasswordIcon from "@/components/icons/PasswordIcon.vue";
 import UserIcon from "@/components/icons/UserIcon.vue";
 import { Sex } from "@/tools/Entities";
-import PRadioMale from "@/components/UI/PRadioMale.vue";
-import PRadioFemale from "@/components/UI/PRadioFemale.vue";
 import PSexRadioGroup from "@/components/UI/PSexRadioGroup.vue";
 
 const formField = ref({
 	name: "",
 	day: "",
-	month: "",
+	month: "0",
 	year: "",
 	sex: Sex.male,
 	email: "",

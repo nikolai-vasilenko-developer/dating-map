@@ -1,12 +1,27 @@
 .sex-radio-button {
+	transition: .25s;
 	padding: 17px 0;
 	text-align: center;
 	width: 100%;
 	border-radius: 500px;
 	cursor: pointer;
-	border: 1px solid red;
 	flex: 1;
 	margin-right: 10px;
+	border: 1px solid transparent;
+	background: #230E2B;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -2px;
+		border-radius: inherit;
+	}
 
 	&:last-child {
 		margin-right: 0;
@@ -14,7 +29,7 @@
 }
 
 .sex-radio-button_active {
-	background: #000;
+	background: #00000000;
 }
 
 
@@ -22,4 +37,20 @@
 	display: flex;
 	align-items: center;
 }
+
+
+.sex-radio-male {
+	&::before {
+
+		background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+	}
+}
+
+.sex-radio-female {
+	&::before {
+		background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+	}
+}
+
+
 

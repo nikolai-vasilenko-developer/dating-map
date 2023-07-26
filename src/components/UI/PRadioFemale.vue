@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="sex-radio-button"
+		class="sex-radio-button sex-radio-female"
 		:class="{ 'sex-radio-button_active': isActive }"
 		@click="updateSex"
 	>
